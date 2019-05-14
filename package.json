@@ -8,7 +8,6 @@
     "report": "allure generate ./allure-results --clean && allure open"
   },
   "author": "Kiryl Parkhomenka",
-  "license": "test licence",
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
