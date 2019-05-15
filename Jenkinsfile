@@ -1,10 +1,6 @@
 pipeline {
-   agent {
-     docker {
-       image 'circleci/node:10.12-browsers'
-     }
+   agent any
 
-   }
    stages {
      stage('Build') {
        steps {
