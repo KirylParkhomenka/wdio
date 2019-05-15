@@ -26,6 +26,6 @@
     "webdriverio": "^5.8.1"
   },
   "dependencies": {
-    "node": "^12.1.0"
+    "node": "12.1.0"
   }
 }
