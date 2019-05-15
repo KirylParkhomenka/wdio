@@ -2,6 +2,11 @@ pipeline {
    agent any
 
    stages {
+     stage('Prepare') {
+       steps {
+         sh 'export PATH=/usr/local/bin'
+       }
+     }
      stage('Build') {
        steps {
          sh 'npm install'
@@ -10,19 +15,6 @@ pipeline {
      stage('Test') {
        steps {
          sh 'npm test'
-       }
-     }
-   }
-   post {
-     always {
-       script {
-         allure([
-           includeProperties: false,
-           jdk: '',
-           properties: [],
-           reportBuildPolicy: 'ALWAYS',
-           results: [[path: 'target/allure-results']]
-         ])
        }
      }
    }
