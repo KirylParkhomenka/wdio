@@ -52,23 +52,23 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-      /*{
+      {
         browserName: 'chrome',
         maxInstances: 1,
         'goog:chromeOptions': {
          // to run chrome headless the following flags are required
          // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
-         args: ['--headless', '--disable-gpu'],
+         //args: ['--headless', '--disable-gpu'],
        }
-     },*/
+     },
       /*{
         browserName: 'firefox',
         maxInstances: 1,
       },*/
-      {
+      /*{
         browserName: 'safari',
         maxInstances: 1,
-      }
+      }*/
     ],
     //
     // ===================
@@ -77,6 +77,7 @@ exports.config = {
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // Level of logging verbosity: trace | debug | info | warn | error
+    sync: true,
     logLevel: 'error',
     //
     // Warns when a deprecated command is used
@@ -162,6 +163,13 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
+     before: function (capabilities, specs) {
+     var chai = require('chai');
+     var chaiWebdriver = require('chai-webdriverio').default;
+     chai.use(chaiWebdriver(browser));
+
+     global.expect = chai.expect;
+     },
     //before: function (capabilities, specs) {
     //  require('ts-node').register({ files: true });
     //},
