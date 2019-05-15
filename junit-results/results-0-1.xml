@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="manheim_com_page" timestamp="2019-05-15T18:10:27" time="2.903" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="manheim.com page"/>
+      <property name="capabilities" value="chrome.74_0_3729_157.macosx"/>
+      <property name="file" value="./test/sample2.js"/>
+    </properties>
+    <testcase classname="chrome.74_0_3729_157.macosx.manheim_com_page" name="should_have_the_right_title_International" time="2.902"/>
+  </testsuite>
+</testsuites>
