@@ -2,13 +2,9 @@ pipeline {
    agent any
 
    stages {
-     stage('Prepare') {
-       steps {
-         sh 'export PATH=/usr/local/bin'
-       }
-     }
      stage('Build') {
        steps {
+         sh 'export PATH=/usr/local/bin'
          sh 'npm install'
        }
      }
