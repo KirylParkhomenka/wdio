@@ -135,7 +135,8 @@ exports.config = {
       //  'tsconfig-paths/register'
       //],
         ui: 'bdd',
-        timeout: timeout
+        timeout: timeout,
+        compilers: ['js:@babel/register'],
     },
     //
     // =====
@@ -159,21 +160,21 @@ exports.config = {
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-    // beforeSession: function (config, capabilities, specs) {
-    // },
+    /*beforeSession: function (config, capabilities, specs) {
+    }*/
     /**
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.
      * @param {Array.<Object>} capabilities list of capabilities details
      * @param {Array.<String>} specs List of spec file paths that are to be run
      */
-     before: function (capabilities, specs) {
+     /*before: function (capabilities, specs) {
      var chai = require('chai');
      var chaiWebdriver = require('chai-webdriverio').default;
      chai.use(chaiWebdriver(browser));
 
      global.expect = chai.expect;
-     },
+     },*/
     //before: function (capabilities, specs) {
     //  require('ts-node').register({ files: true });
     //},

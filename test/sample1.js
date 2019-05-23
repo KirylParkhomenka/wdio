@@ -1,12 +1,10 @@
+//var chai = require("chai");
+//var expect = chai.expect;
+import {expect} from 'chai';
 const assert = require('assert');
+//const expect = require('chai').expect;
 
 describe('manheim.com page', () => {
-  it('should have the right title - Manheim Auctions', () => {
-      browser.url('http://www.manheim.com.au');
-      const TITLE = browser.getTitle();
-      assert.equal(TITLE, 'Manheim Auctions');
-    });
-
   it('should proceed to Login page', () => {
       const LOGIN_BTN = $('//div[contains (@class, "header-links-bar")]//a[@href = "/account/login"]');
       const EMAIL_INPUT = $('#LogOnUsername');
@@ -19,6 +17,7 @@ describe('manheim.com page', () => {
       LOGIN_BTN.click();
       EMAIL_INPUT.addValue('test');
       PASSWORD.addValue('test');
+      OK_BTN.click();
 
       expect(ERROR.isDisplayed());
     });
