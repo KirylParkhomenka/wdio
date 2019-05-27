@@ -61,12 +61,12 @@ exports.config = {
          //args: ['--headless', '--disable-gpu'],
        }
       },
-      /*{
+      {
         browserName: 'firefox',
         maxInstances: 1,
         acceptInsecureCerts: true,
-      },*/
-      /*{
+      },
+     /* {
         browserName: 'safari',
         maxInstances: 1,
       }*/
@@ -113,12 +113,11 @@ exports.config = {
             chrome: {
                 version: "74.0.3729.6",
                 baseURL: 'https://chromedriver.storage.googleapis.com'
-            }/*,
+            },
             firefox: {
               version: "0.24.0",
-              arch: process.arch,
-              baseURL: 'https://github.com/mozilla/geckodriver/releases/tag'
-          }*/
+              baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
+          }
         },
       },
       seleniumArgs: {
@@ -126,12 +125,11 @@ exports.config = {
               chrome: {
                   version: "74.0.3729.6",
                   baseURL: 'https://chromedriver.storage.googleapis.com'
-              }/*,
+              },
               firefox: {
                 version: "0.24.0",
-                arch: process.arch,
-                baseURL: 'https://github.com/mozilla/geckodriver/releases/tag'
-            }*/
+                baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
+            }
           },
       },
     // Framework you want to run your specs with.
