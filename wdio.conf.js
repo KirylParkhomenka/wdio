@@ -60,10 +60,11 @@ exports.config = {
          // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
          //args: ['--headless', '--disable-gpu'],
        }
-     },
+      },
       /*{
         browserName: 'firefox',
         maxInstances: 1,
+        acceptInsecureCerts: true,
       },*/
       /*{
         browserName: 'safari',
@@ -107,6 +108,22 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['selenium-standalone'],
+      seleniumInstallArgs: {
+        drivers: {
+            chrome: {
+                version: "74.0.3729.6",
+                baseURL: 'https://chromedriver.storage.googleapis.com'
+            }
+        },
+      },
+      seleniumArgs: {
+          drivers: {
+              chrome: {
+                  version: "74.0.3729.6",
+                  baseURL: 'https://chromedriver.storage.googleapis.com'
+              }
+          },
+      },
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks.html
