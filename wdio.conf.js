@@ -91,7 +91,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://www.manheim.com/',
+    baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -113,7 +113,12 @@ exports.config = {
             chrome: {
                 version: "74.0.3729.6",
                 baseURL: 'https://chromedriver.storage.googleapis.com'
-            }
+            }/*,
+            firefox: {
+              version: "0.24.0",
+              arch: process.arch,
+              baseURL: 'https://github.com/mozilla/geckodriver/releases/tag'
+          }*/
         },
       },
       seleniumArgs: {
@@ -121,7 +126,12 @@ exports.config = {
               chrome: {
                   version: "74.0.3729.6",
                   baseURL: 'https://chromedriver.storage.googleapis.com'
-              }
+              }/*,
+              firefox: {
+                version: "0.24.0",
+                arch: process.arch,
+                baseURL: 'https://github.com/mozilla/geckodriver/releases/tag'
+            }*/
           },
       },
     // Framework you want to run your specs with.
