@@ -61,11 +61,11 @@ exports.config = {
          //args: ['--headless', '--disable-gpu'],
        }
       },
-      {
+      /*{
         browserName: 'firefox',
         maxInstances: 1,
         acceptInsecureCerts: true,
-      },
+      },*/
      /* {
         browserName: 'safari',
         maxInstances: 1,
@@ -151,7 +151,7 @@ exports.config = {
                 return `results-${opts.cid}.xml`
             }
           }
-        ]],
+        ]],     
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
