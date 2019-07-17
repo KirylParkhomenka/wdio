@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="manheim_com_page" timestamp="2019-05-20T16:57:11" time="13.394" tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="AutoCheck_and_CarFax_links_verification" timestamp="2019-07-17T16:12:23" time="18.823" tests="3" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="manheim.com page"/>
-      <property name="capabilities" value="chrome.74_0_3729_157.macosx"/>
-      <property name="file" value="./test/sample1.js"/>
+      <property name="suiteName" value="AutoCheck and CarFax links verification"/>
+      <property name="capabilities" value="chrome.75_0_3770_142.macosx"/>
+      <property name="file" value="./test/autocheckCarfaxTest.js"/>
     </properties>
-    <testcase classname="chrome.74_0_3729_157.macosx.manheim_com_page" name="should_have_the_right_title_Manheim_Auctions" time="10.113"/>
-    <testcase classname="chrome.74_0_3729_157.macosx.manheim_com_page" name="should_proceed_to_Login_page" time="3.28"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.AutoCheck_and_CarFax_links_verification" name="Both_AutoCheck_and_Carfax_links_are_present" time="4.996"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.AutoCheck_and_CarFax_links_verification" name="AutoCheck_link_should_open_in_the_same_window_on_Mobile" time="7.849"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.AutoCheck_and_CarFax_links_verification" name="CarFax_link_should_open_in_the_same_window_on_Mobile" time="5.976"/>
   </testsuite>
 </testsuites>
