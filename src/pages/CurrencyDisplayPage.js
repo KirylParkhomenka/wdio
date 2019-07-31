@@ -4,14 +4,15 @@ class CurrencyDisplayPage {
   get baseMmrCurrencyText() { return $('div[class*=\'styles__currency_\']'); }
   get transactionTableRow() { return $('#TxnTableBody > *:first-child'); }
   get projectedAverageNextMonth() { return $('//div[@data-test = \'MMRNextMonthDisplay\']'); }
+  get deltaIcon() { return $('//i[@data-test = \'deltaIcon\']'); }
 
   getAdjustedCurrencyText() {
-    this.transactionTableRow.waitForDisplayed(5000);
+    this.deltaIcon.waitForDisplayed(5000);
     return this.adjustedCurrencyText.getText();
   }
 
   getBaseMmrCurrencyText() {
-    this.transactionTableRow.waitForDisplayed(5000);
+    this.deltaIcon.waitForDisplayed(5000);
     return this.baseMmrCurrencyText.getText();
   }
 
@@ -20,4 +21,4 @@ class CurrencyDisplayPage {
   }
   
 }
-  export default new CurrencyDisplayPage();
+export default new CurrencyDisplayPage();

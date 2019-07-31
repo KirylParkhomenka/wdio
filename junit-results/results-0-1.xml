@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Currency_Display_feature_verification" timestamp="2019-07-17T16:12:23" time="6.237" tests="2" failures="0" errors="0" skipped="0">
+  <testsuite name="Currency_Display_feature_verification" timestamp="2019-07-30T12:35:08" time="5.594" tests="2" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="suiteName" value="Currency Display feature verification"/>
       <property name="capabilities" value="chrome.75_0_3770_142.macosx"/>
       <property name="file" value="./test/currencyDisplayTest.js"/>
     </properties>
-    <testcase classname="chrome.75_0_3770_142.macosx.Currency_Display_feature_verification" name="00_is_displayed_for_Adjusted_MMR_with_value_of_0" time="4.341"/>
-    <testcase classname="chrome.75_0_3770_142.macosx.Currency_Display_feature_verification" name="is_displayed_for_Projected_MMR_with_value_of_0" time="1.895"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Currency_Display_feature_verification" name="00_is_displayed_for_Adjusted_MMR_with_value_of_0" time="4.28"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Currency_Display_feature_verification" name="is_displayed_for_Projected_MMR_with_value_of_0" time="1.312"/>
   </testsuite>
 </testsuites>

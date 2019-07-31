@@ -3,8 +3,6 @@ import AutocheckCarfaxPage from '../src/pages/AutocheckCarfaxPage';
 import { assert } from 'chai';
 import { expect } from 'chai';
 
-//TBD change assert with expect
-
 const VIN = 'YV126MFB6F2122313';
 
 describe('AutoCheck and CarFax links verification', () => {
@@ -21,7 +19,7 @@ describe('AutoCheck and CarFax links verification', () => {
     MainPage.performSearchByVin(VIN);
     AutocheckCarfaxPage.clickAutoCheckLink();
     
-    assert.lengthOf(MainPage.verifyNumberOfWindows(), 1);
+    expect(MainPage.verifyNumberOfWindows()).to.have.lengthOf(1);
     browser.back();
   });
 
@@ -30,7 +28,7 @@ describe('AutoCheck and CarFax links verification', () => {
     MainPage.performSearchByVin(VIN);
     AutocheckCarfaxPage.clickCarFaxLink();
     
-    assert.lengthOf(MainPage.verifyNumberOfWindows(), 1);
+    expect(MainPage.verifyNumberOfWindows()).to.have.lengthOf(1);
     browser.back();
   });
 });

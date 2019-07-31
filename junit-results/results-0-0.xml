@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="AutoCheck_and_CarFax_links_verification" timestamp="2019-07-17T16:12:23" time="18.823" tests="3" failures="0" errors="0" skipped="0">
+  <testsuite name="Odometer_feature_verification" timestamp="2019-07-30T17:35:25" time="67.274" tests="8" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
-      <property name="suiteName" value="AutoCheck and CarFax links verification"/>
+      <property name="suiteName" value="Odometer feature verification"/>
       <property name="capabilities" value="chrome.75_0_3770_142.macosx"/>
-      <property name="file" value="./test/autocheckCarfaxTest.js"/>
+      <property name="file" value="./test/odometerTest.js"/>
     </properties>
-    <testcase classname="chrome.75_0_3770_142.macosx.AutoCheck_and_CarFax_links_verification" name="Both_AutoCheck_and_Carfax_links_are_present" time="4.996"/>
-    <testcase classname="chrome.75_0_3770_142.macosx.AutoCheck_and_CarFax_links_verification" name="AutoCheck_link_should_open_in_the_same_window_on_Mobile" time="7.849"/>
-    <testcase classname="chrome.75_0_3770_142.macosx.AutoCheck_and_CarFax_links_verification" name="CarFax_link_should_open_in_the_same_window_on_Mobile" time="5.976"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="Custom_Odometer_Values_Are_Not_Persisted_Across_YMMS_Selections" time="12.354"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="Comma_allowed_in_odometer_field_thousands" time="7.318"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="Comma_allowed_in_odometer_field_millions_can_be_changed" time="9.5"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="Comma_allowed_in_odometer_field_billions" time="8.36"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="I_change_odometer_to_have_commas_in_the_wrong_place" time="8.308"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="I_land_on_the_MMR_page_from_a_deep_linked_URL_with_bad_mileage_in_the_URL" time="4.937"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="Perform_VIN_search_and_update_odometer_value_by_pressing_Enter_on_keyboard" time="3.284"/>
+    <testcase classname="chrome.75_0_3770_142.macosx.Odometer_feature_verification" name="Perform_YMMS_search_and_update_odometer_value_by_pressing_Enter_on_keyboard" time="6.869"/>
   </testsuite>
 </testsuites>
