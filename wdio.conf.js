@@ -54,7 +54,7 @@ exports.config = {
         // 5 instances get started at a time.
       {
         browserName: 'chrome',
-        maxInstances: 1,
+        maxInstances: 4,
         'goog:chromeOptions': {
          // to run chrome headless the following flags are required
          // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
@@ -145,13 +145,7 @@ exports.config = {
     // see also: https://webdriver.io/docs/dot-reporter.html
     reporters: [
         'spec',
-        ['junit', {
-            outputDir: './junit-results/',
-            outputFileFormat: function(opts) { // optional
-                return `results-${opts.cid}.xml`
-            }
-          }
-        ]],     
+        ],     
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
