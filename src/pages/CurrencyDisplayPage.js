@@ -2,22 +2,36 @@ class CurrencyDisplayPage {
 
   get adjustedCurrencyText() { return $('//div[@data-test = \'AdjustedMMR\']//div[@data-test = \'currencyDisplay\']'); }
   get baseMmrCurrencyText() { return $('div[class*=\'styles__currency_\']'); }
+  get baseMmrAboveText() { return $('//span[@data-test = \'above\']'); }
+  get baseMmrBelowText() { return $('//span[@data-test = \'below\']'); }
   get transactionTableRow() { return $('#TxnTableBody > *:first-child'); }
   get projectedAverageNextMonth() { return $('//div[@data-test = \'MMRNextMonthDisplay\']'); }
   get deltaIcon() { return $('//i[@data-test = \'deltaIcon\']'); }
 
   getAdjustedCurrencyText() {
-    this.deltaIcon.waitForDisplayed(5000);
     return this.adjustedCurrencyText.getText();
   }
 
   getBaseMmrCurrencyText() {
-    this.deltaIcon.waitForDisplayed(5000);
     return this.baseMmrCurrencyText.getText();
+  }
+
+  getBaseMmrAboveText() {
+    return this.baseMmrAboveText.getText();
+  }
+
+  getBaseMmrBelowText() {
+    return this.baseMmrBelowText.getText();
   }
 
   getProjectedAverageNextMonthText() {
     return this.projectedAverageNextMonth.getText();
+  }
+
+  waitForDeltaIconIsDisplayed() {      
+    browser.waitUntil(() => {
+      return this.deltaIcon.isDisplayed()
+    }, 2000);
   }
   
 }

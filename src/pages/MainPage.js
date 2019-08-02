@@ -21,6 +21,11 @@ class MainPage {
     browser.url(Constants.URL_MOBILE);
   }
 
+  openEmptyMmrPageDesktop() {
+    browser.setWindowSize(1920, 1200);
+    browser.url(Constants.URL_EMPTY_MMR_PAGE);
+  }
+
   performSearchByVin(VIN) {
     this.vinInput.doubleClick();
     browser.keys('Delete')

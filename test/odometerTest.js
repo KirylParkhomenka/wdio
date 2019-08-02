@@ -78,6 +78,7 @@ describe('Odometer feature verification', () => {
     MainPage.performSearchByVin(VIN);
     OdometerPage.setOdometerValue('50,000');
     MainPage.pressEnterOnKeyboard();
+    CurrencyDisplayPage.waitForDeltaIconIsDisplayed();
 
     expect(CurrencyDisplayPage.getAdjustedCurrencyText()).to.equal('$2,450');
     expect(OdometerPage.getOdometerValue()).to.equal('50,000');    
@@ -90,5 +91,5 @@ describe('Odometer feature verification', () => {
 
     assert.isTrue(OdometerPage.isOdometerFieldDisabled());
     expect(OdometerPage.getOdometerValue()).to.equal('50,000');   
-  }); 
+  });
 });
