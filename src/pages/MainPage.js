@@ -28,7 +28,7 @@ class MainPage {
 
   performSearchByVin(VIN) {
     this.vinInput.doubleClick();
-    browser.keys('Delete')
+    browser.keys('\uE003');
     this.vinInput.addValue(VIN);
     this.searchButton.click();
   }
@@ -39,7 +39,7 @@ class MainPage {
   }
 
   pressEnterOnKeyboard() {
-    browser.keys('Enter');
+    browser.keys('\uE007');
   }
 
   selectYearDropdown(year) {

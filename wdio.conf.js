@@ -54,7 +54,7 @@ exports.config = {
         // 5 instances get started at a time.
       {
         browserName: 'chrome',
-        maxInstances: 4,
+        maxInstances: 1,
         'goog:chromeOptions': {
          // to run chrome headless the following flags are required
          // (see https://developers.google.com/web/updates/2017/04/headless-chrome)
@@ -63,10 +63,10 @@ exports.config = {
       },
       /*{
         browserName: 'firefox',
-        maxInstances: 2,
+        maxInstances: 4,
         acceptInsecureCerts: true,
-      },
-      {
+      },*/
+      /*{
         browserName: 'safari',
         maxInstances: 1,
       }*/
