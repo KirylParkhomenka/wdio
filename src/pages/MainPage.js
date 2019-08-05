@@ -8,7 +8,6 @@ class MainPage {
   get makeDropdown() { return $('#Make'); }
   get modelDropdown() { return $('#Model'); }
   get styleDropdown() { return $('#Style'); }
-
   get transactionsTable() { return $('#TxnTableBody'); }
 
   openMainPageDesktopView() {
@@ -65,6 +64,11 @@ class MainPage {
     browser.waitUntil(() => {
       return this.transactionsTable.isDisplayed()
     }, 5000);
+  }
+
+  clearVinInput() {
+    this.vinInput.clearValue();
+    browser.keys('\uE017');
   }
 
 }

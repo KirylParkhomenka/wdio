@@ -63,7 +63,7 @@ exports.config = {
       },
       /*{
         browserName: 'firefox',
-        maxInstances: 4,
+        maxInstances: 1,
         acceptInsecureCerts: true,
       },*/
       /*{

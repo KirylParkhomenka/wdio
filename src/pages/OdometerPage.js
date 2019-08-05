@@ -15,9 +15,9 @@ class OdometerPage {
     return this.odometerInput.getValue();
   }
 
-  clearOdometerValue() {
+  clearOdometerInput() {
     this.odometerInput.doubleClick();
-    browser.keys('Delete');
+    browser.keys('\uE017');
   }
 
   makeYmmsSelection() {

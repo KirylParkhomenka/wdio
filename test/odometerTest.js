@@ -43,7 +43,7 @@ describe('Odometer feature verification', () => {
 
     expect(OdometerPage.getOdometerValue()).to.be.equal('1,234,000');
 
-    OdometerPage.clearOdometerValue();
+    OdometerPage.clearOdometerInput();
     OdometerPage.setOdometerValue('750');
 
     expect(OdometerPage.getOdometerValue()).to.be.equal('750');
@@ -72,6 +72,7 @@ describe('Odometer feature verification', () => {
     OdometerPage.waitForOdometerInputEnabled();
 
     expect(OdometerPage.getOdometerValue()).to.be.equal('');
+    MainPage.clearVinInput();
   });
   
  it('Perform VIN search and update odometer value by pressing Enter on keyboard', () => {

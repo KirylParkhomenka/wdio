@@ -31,7 +31,7 @@ class CurrencyDisplayPage {
   waitForDeltaIconIsDisplayed() {      
     browser.waitUntil(() => {
       return this.deltaIcon.isDisplayed()
-    }, 5000);
+    }, 7000);
   }
   
 }
