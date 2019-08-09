@@ -5,7 +5,7 @@
   "repository": "testURL",
   "scripts": {
     "test": "wdio",
-    "report": "allure generate ./allure-results --clean && allure open"
+    "dev": "wdio --spec"
   },
   "author": "Kiryl Parkhomenka",
   "license": "ISC",
