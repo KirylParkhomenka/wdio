@@ -1,5 +1,13 @@
 ## Description
-This project uses [WebdriverIO v5](https://github.com/webdriverio/webdriverio/) and [Mocha](https://github.com/mochajs/mocha) and designed to create Automation tests with Node.js
+This framework is designed to build Automation test suites using Node.js
+
+## Features
+
+- [WebdriverIO v5](https://github.com/webdriverio/webdriverio/)
+- [Mocha](https://github.com/mochajs/mocha)
+- [Chai] (https://github.com/chaijs/chai)
+- Page Object pattern
+
 
 ## Getting Started
 Install dependencies:
@@ -25,10 +33,10 @@ npm run dev specName.js
 
 ## Browsers configuration
 Tests can be run in:
-- Chrome
-- Chrome headless
-- Firefox
-- Safari
+- **Chrome**
+- **Chrome headless**
+- **Firefox**
+- **Safari**
 
 Browsers can be configured in **'capabilities'** section in
 
