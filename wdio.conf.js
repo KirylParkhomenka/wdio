@@ -91,7 +91,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost', 
+    baseUrl: 'http://localhost',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -109,9 +109,11 @@ exports.config = {
     // commands. Instead, they hook themselves up into the test process.
     services: ['selenium-standalone'],
       seleniumInstallArgs: {
+        version : "3.9.1",
+        baseURL : "https://selenium-release.storage.googleapis.com",
         drivers: {
             chrome: {
-                version: "74.0.3729.6",
+                version: "76.0.3809.68",
                 baseURL: 'https://chromedriver.storage.googleapis.com'
             },
             firefox: {
@@ -121,14 +123,13 @@ exports.config = {
         },
       },
       seleniumArgs: {
+        version : "3.9.1",
           drivers: {
               chrome: {
-                  version: "74.0.3729.6",
-                  baseURL: 'https://chromedriver.storage.googleapis.com'
+                  version: "76.0.3809.68",
               },
               firefox: {
                 version: "0.24.0",
-                baseURL: 'https://github.com/mozilla/geckodriver/releases/download'
             }
           },
       },
