@@ -5,7 +5,7 @@ This framework is designed to build Automation test suites using Node.js
 
 - [WebdriverIO v5](https://github.com/webdriverio/webdriverio/)
 - [Mocha](https://github.com/mochajs/mocha)
-- [Chai] (https://github.com/chaijs/chai)
+- [Chai](https://github.com/chaijs/chai)
 - Page Object pattern
 
 
