@@ -11,7 +11,7 @@ class MainPage {
   get transactionsTable() { return $('#TxnTableBody'); }
 
   openMainPageDesktopView() {
-    browser.setWindowSize(1920, 1200);+
+    browser.setWindowSize(1920, 1200);
     browser.url(Constants.URL_DESKTOP);
   }
 

@@ -8,7 +8,6 @@ This framework is designed to build Automation test suites using Node.js
 - [Chai](https://github.com/chaijs/chai)
 - Page Object pattern
 
-
 ## Getting Started
 Install dependencies:
 

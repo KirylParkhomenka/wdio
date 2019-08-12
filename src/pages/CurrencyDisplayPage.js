@@ -8,6 +8,10 @@ class CurrencyDisplayPage {
   get projectedAverageNextMonth() { return $('//div[@data-test = \'MMRNextMonthDisplay\']'); }
   get deltaIcon() { return $('//i[@data-test = \'deltaIcon\']'); }
 
+  adjustMid(mid) {
+    browser.url('http://localhost:8080/?country=US&mid=' + mid + '&mileage=500000&region=NE');
+  }
+  
   getAdjustedCurrencyText() {
     return this.adjustedCurrencyText.getText();
   }
