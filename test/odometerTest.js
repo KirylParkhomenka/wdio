@@ -1,13 +1,11 @@
 import MainPage from '../src/pages/MainPage';
 import OdometerPage from '../src/pages/OdometerPage';
 import CurrencyDisplayPage from '../src/pages/CurrencyDisplayPage';
-import { assert } from 'chai';
-import { expect } from 'chai';
+import { assert, expect } from 'chai';
 
 const VIN = '1G2ZG558764249870';
 
 describe('Odometer feature verification', () => {
-
   before(() => {
     MainPage.openMainPageDesktopView();
   })

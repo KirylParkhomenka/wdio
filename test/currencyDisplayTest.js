@@ -6,7 +6,6 @@ const MID_1 = '200401408080560';
 const MID_2 = '200006904730410';
 
 describe('Currency Display feature verification', () => {
-
   before(() => {
     MainPage.openEmptyMmrPageDesktop();
   })

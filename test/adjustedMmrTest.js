@@ -2,9 +2,7 @@ import MainPage from '../src/pages/MainPage';
 import OdometerPage from '../src/pages/OdometerPage';
 import AdjustedMmrPage from '../src/pages/AdjustedMmrPage';
 import CurrencyDisplayPage from '../src/pages/CurrencyDisplayPage';
-
-import { assert } from 'chai';
-import { expect } from 'chai';
+import { assert, expect } from 'chai';
 
 const inputs = [
     {
@@ -50,7 +48,6 @@ const inputs = [
 ]
 
 describe('Adjusted MMR feature verification', () => {
-
   before(() => {
     MainPage.openEmptyMmrPageDesktop();
   })

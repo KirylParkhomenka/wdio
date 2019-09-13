@@ -1,12 +1,10 @@
 import MainPage from '../src/pages/MainPage';
 import AutocheckCarfaxPage from '../src/pages/AutocheckCarfaxPage';
-import { assert } from 'chai';
-import { expect } from 'chai';
+import { assert, expect } from 'chai';
 
 const VIN = 'YV126MFB6F2122313';
 
 describe('AutoCheck and CarFax links verification', () => {
-  
   it('Both AutoCheck and Carfax links are present', () => {
     console.log('==='+browser.capabilities.browserName);
     MainPage.openMainPageDesktopView(URL);
