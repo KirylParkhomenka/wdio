@@ -41,3 +41,4 @@ Browsers can be configured in **'capabilities'** section in
 
 ##### `wdio.conf.js`
 
+Note: works well on Windows 10 with node v10.16.3
