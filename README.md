@@ -12,7 +12,7 @@ This framework is designed to build Automation test suites using Node.js
 Install dependencies:
 
 ```
-npm install
+yarn install
 ```
 
 ## Running Tests
@@ -21,13 +21,13 @@ Before running tests locally - start Emmr-frontend application.
 Run all tests:
 
 ```
-npm test
+yarn test
 ```
 
 In order to run a single spec, you can use:
 
 ```
-npm run dev specName.js
+yarn dev specName.js
 ```
 
 ## Browsers configuration
