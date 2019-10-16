@@ -2,9 +2,11 @@
 name: test
 about: test
 title: ''
-labels: ''
+labels: good first issue
 assignees: ''
 
 ---
 
 test
+us
+deff
