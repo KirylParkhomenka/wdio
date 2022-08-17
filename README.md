@@ -1,4 +1,5 @@
 ## Description
+
 This framework is designed to build Automation test suites using Node.js
 
 ## Features
@@ -9,13 +10,15 @@ This framework is designed to build Automation test suites using Node.js
 - Page Object pattern
 
 ## Getting Started
-Install dependencies:
+
+Install dependencies
 
 ```
 yarn install
 ```
 
 ## Running Tests
+
 Before running tests locally - start Emmr-frontend application.
 
 Run all tests:
@@ -31,7 +34,9 @@ yarn dev specName.js
 ```
 
 ## Browsers configuration
+
 Tests can be run in:
+
 - **Chrome**
 - **Chrome headless**
 - **Firefox**
