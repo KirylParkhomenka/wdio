@@ -11,7 +11,7 @@ This framework is designed to build Automation test suites using Node.js
 
 ## Getting Started
 
-Install dependencies
+Install dependencies:
 
 ```
 yarn install
