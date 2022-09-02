@@ -1,4 +1,4 @@
-## Description:
+## Description
 
 This framework is designed to build Automation test suites using Node.js
 
